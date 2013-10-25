@@ -1,15 +1,10 @@
 'use strict';
 
 angular.module('backofficeApp')
-  .controller('GamesCtrl', function ($scope, $rootScope, $timeout) {
-    $scope.games = JSON.parse(localStorage['games']);
+  .controller('GamesCtrl', function ($scope, $rootScope, $timeout, $resource) {
 
-    $scope.$watchCollection('games', function(newValue, oldValue) {
-      var games = _.transform(newValue, function(result, game) {
-        result.push({id:game.id, name:game.name});
-      });
-      localStorage['games'] = JSON.stringify(games);
-    });
+    var Game = $resource('http://localhost:8080/backoffice-backend/game/:id', {id:'@id'});
+    $scope.games = Game.query();
 
     $scope.openModal = function() {
       $('#myModal').modal('show');
@@ -17,7 +12,10 @@ angular.module('backofficeApp')
     }
 
     $scope.addGame = function() {
-      $scope.games.push({id: _.max($scope.games, 'id').id + 1, name: $scope.name});
+      var game = new Game({name: $scope.name});
+      game.$save();
+      $scope.games.push(game);
+
       $('#myModal').modal('hide');
       $rootScope.message = "Game created";
 
@@ -29,6 +27,10 @@ angular.module('backofficeApp')
     $scope.removeGame = function(id) {
       _.remove($scope.games, function(game){
         return game.id == id;
+      });
+
+      var game = Game.get({id:id}, function() {
+        game.$delete();
       });
 
       $rootScope.message = "Game deleted";

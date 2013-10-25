@@ -15,7 +15,8 @@ angular.module('backofficeApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ngResource'
 ])
   .config(function ($routeProvider) {
     $routeProvider
