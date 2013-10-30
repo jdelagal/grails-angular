@@ -33,3 +33,11 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 
         grunt server
 
+## Roadmap
+
+* Setup API security using:
+
+    * [Spring Security Core](http://grails.org/plugin/spring-security-core) in the backend.
+    * [http-auth-interceptor](http://ngmodules.org/modules/http-auth-interceptor) in the frontend.
+
+* Setup API documentation using [Swagger](https://developers.helloreverb.com/swagger/).
