@@ -9,20 +9,27 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 
 ## How to get started
 
-1. Install [Yeoman](http://yeoman.io), including Yo, Grunt and Bower (note: you don't need Grails. It will be downloaded automatically).
+1. Install [Yeoman](http://yeoman.io) (note: you don't need Grails. It will be downloaded automatically):
 
-2. Start the backend:
+        npm install -g yo
+
+2. Make sure you have `yo`, `grunt` and `bower` command line tools:
+
+        yo --version
+        grunt --version
+        bower --version
+
+3. Start the backend:
 
         cd backend
         ./grailsw run-app
 
-3. Install frontend dependencies (you need to do this only once):
+4. Install frontend dependencies (you need to do this only once):
 
         cd ../frontend
         npm install
 
-
-4. Start the frontend:
+5. Start the frontend:
 
         grunt server
 
