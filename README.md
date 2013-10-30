@@ -18,13 +18,11 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 ```
 		
 3. Install frontend dependencies (you need to do this only once):
-```
-#!bash
-	cd ../frontend
-	npm install
-```
+   ```
+   #!bash
+   cd ../frontend
+   npm install
+   ```
 		
-4. Start the frontend:
-	```
-	grunt server
-	```
+4. Start the frontend: `grunt server`
+
