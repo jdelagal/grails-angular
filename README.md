@@ -13,7 +13,6 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 
 2. Start the backend:
 ```
-	#!bash
 	cd backend
 	./grails run-app
 ```
@@ -26,6 +25,6 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 ```
 		
 4. Start the frontend:
-```
-grunt server
-```
+	```
+	grunt server
+	```
