@@ -13,10 +13,8 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 
 2. Start the backend:
 
-        ```shell
         cd backend
-        ./grails run-app
-        ```
+        ./grailsw run-app
 
 3. Install frontend dependencies (you need to do this only once):
 
