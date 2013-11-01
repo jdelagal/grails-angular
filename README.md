@@ -29,6 +29,7 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 
         cd ../frontend
         npm install
+        bower update
 
 5. Start the frontend:
 
