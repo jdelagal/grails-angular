@@ -9,9 +9,10 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 
 ## How to get started
 
-1. Install [Yeoman](http://yeoman.io) (note: you don't need Grails. It will be downloaded automatically):
+1. Install [Yeoman](http://yeoman.io) (note: you don't need Grails. It will be downloaded automatically) and [Compass](http://compass-style.org/):
 
         npm install -g yo
+        sudo gem install compass
 
 2. Make sure you have `yo`, `grunt` and `bower` command line tools:
 
