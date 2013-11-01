@@ -30,7 +30,9 @@
       <sourceFolder url="file://$MODULE_DIR$/grails-app/services" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/grails-app/taglib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/groovy" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/target/work/gspcompile" />
       <excludeFolder url="file://$MODULE_DIR$/target/work/plugin-build-classes" />
       <excludeFolder url="file://$MODULE_DIR$/target/work/plugin-classes" />
       <excludeFolder url="file://$MODULE_DIR$/target/work/plugin-provided-classes" />
@@ -44,7 +46,6 @@
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (backend)">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/2.0.5/liquibase-core-2.0.5.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-web/2.0.2.RELEASE/grails-datastore-web-2.0.2.RELEASE.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-plugin-support/2.0.2.RELEASE/grails-datastore-gorm-plugin-support-2.0.2.RELEASE.jar!/" />

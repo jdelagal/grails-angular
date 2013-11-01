@@ -117,3 +117,6 @@ log4j = {
 cors.headers = [
     'Access-Control-Allow-Origin': 'http://127.0.0.1:9000'
 ]
+
+
+grails.app.context = '/'

@@ -3,7 +3,7 @@
 Welcome! This project is a demo of a Single Page Application created using:
 
 * AngularJS for a pure HTML/JS front-end application (`frontend` folder), using Angular's `$resource` to communicate with the server. This project can be built and run using Yeoman (Yo, Grunt and Bower).
-* Grails for the backend (`backend` folder), using Grails 2.3.1 excellent capabilities for serving a REST API.
+* Grails for the backend (`backend` folder), using Grails 2.3.1 excellent capabilities for serving a REST API. The application is meant to be used in standalone mode (with Jetty embedded)
 
 This is the companion code of my talk "[Developing SPI applications using Grails and AngularJS](http://www.slideshare.net/alvarosanchezmariscal/codemotion2013)".
 
@@ -23,7 +23,8 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 3. Start the backend:
 
         cd backend
-        ./grailsw run-app
+        ./grailsw build-standalone
+        java -jar target/standalone-0.1.jar
 
 4. Install frontend dependencies (you need to do this only once):
 

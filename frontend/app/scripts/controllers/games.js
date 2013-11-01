@@ -3,7 +3,7 @@
 angular.module('backofficeApp')
   .controller('GamesCtrl', function ($scope, $rootScope, $timeout, $resource) {
 
-    var Game = $resource('http://localhost:8080/backoffice-backend/game/:id', {id:'@id'});
+    var Game = $resource('http://localhost:8080/game/:id', {id:'@id'});
     $scope.games = Game.query();
 
     $scope.openModal = function() {
