@@ -23,7 +23,7 @@ This is the companion code of my talk "[Developing SPI applications using Grails
 3. Start the backend:
 
         cd backend
-        ./grailsw build-standalone
+        ./grailsw compile && ./grailsw build-standalone
         java -jar target/standalone-0.1.jar
 
 4. Install frontend dependencies (you need to do this only once):
